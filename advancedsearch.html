@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Search images</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+    <body>
+        <main class="container">
+
+            <div class="f-nav">
+                <div class="f-link">
+                    <a href="index.html">Стандартний пошук</a>
+                </div>
+                <div class="f-mark">
+                    <h1>Розширений пошук</h1>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="f-wrap">
+                <form class="q" action="https://google.com/search" method="GET">
+                    <div class="f-column">
+                        <span class="desc">Знайти сторінки із…</span>
+                        <ul class="f-row">
+                            <li>
+                                <label for="as_q" class="f-label">усіма цими словами:</label>
+                                <input type="text" name="as_q">
+                                <span class="f-hint">Введіть важливі слова: триколірний рет-тер’єр</span>
+                            </li>
+                            <li>
+                                <label for="as_epq" class="f-label">саме цим словом або фразою:</label>
+                                <input type="text" name="as_epq">
+                                <span class="f-hint">Візьміть точні слова в лапки: "рет-тер’єр"</span>
+                            </li>
+                            <li>
+                                <label for="as_oq" class="f-label">будь-яким із цих слів:</label>
+                                <input type="text" name="as_oq">
+                                <span class="f-hint">Введіть OR між усіма потрібними словами: мініатюрні OR стандартні</span>
+                            </li>
+                            <li>
+                                <label for="as_eq" class="f-label">жодне з цих слів:</label>
+                                <input type="text" name="as_eq">
+                                <span class="f-hint">Поставте знак мінус перед небажаними словами: -гризун, -"Джек Рассел"</span>
+                            </li>
+                        </ul>
+                        <input type="hidden" name="as_qdr" value="all">
+                        <input type="hidden" name="as_occt" value="any">
+                        <input type="hidden" name="safe" value="images">
+                       
+                    </div>
+                    
+                    <input class="blue-btn" type="submit" value="Розширений пошук">
+                    
+                </form>
+            </div >
+
+        </main>
+    </body>
+</html>
