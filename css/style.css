@@ -67,12 +67,11 @@ ul, li {
 .f-wrap {
   display: flex;
   height: 100%;
-  padding-top: 15px;
+  padding: 0 16px;
 }
 
 .f-wrap .q {
   width: 100%;
-  padding: 0 16px;
 }
 
 .j-center {
@@ -82,9 +81,8 @@ ul, li {
 .f-wrap .f-line {
   max-width: 508px;
   display: flex;
-  flex: 1;
   height: 44px;
-  margin: 0 auto;
+  margin: 15px auto;
   width: auto;
 }
 
@@ -199,7 +197,6 @@ ul, li {
 .q input[type="submit"] {
   margin: 11px 4px;
   padding: 0 16px;
-  line-height: 27px;
   height: 36px;
   min-width: 54px;
   color: #3c4043;
